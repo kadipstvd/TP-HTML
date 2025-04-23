@@ -158,3 +158,66 @@ footer a {
 footer a:hover {
   color: #fff;
 }
+
+.banner {
+  background: url('../images/Fanon/fanon_grande_image.jpg');
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 40px;
+  color: #fff;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.genres span {
+  background: #1db954;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-right: 8px;
+  font-size: 0.8rem;
+}
+
+.banner p {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #eee;
+}
+
+.banner .buttons button {
+  background: #1db954;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.banner .buttons button:hover {
+  background: #17a44b;
+}
