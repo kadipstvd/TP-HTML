@@ -6,16 +6,35 @@
   <title>T'as vu ou pas - Fanon</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-  <header>
-    <h1>T'as vu ou pas</h1>
-    <nav>
-        <a href="principale.html">Accueil</a>
-        <a href="films.html">Films</a>
-        <a href="Séries.html">Séries</a>
-        <a href="about.html">À propos</a>
+  <header class="navbar modern">
+    <div class="navbar-container">
+      <div class="logo">T'as vu ou pas</div>
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="principale.html">Accueil</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="series.html">Séries</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="profil.html">Profil</a></li>
+        </ul>
       </nav>
+      <div class="navbar-actions">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Rechercher...">
+        </div>        
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
   </header>
 
   <section class="banner">
@@ -28,7 +47,7 @@
       </div>
       <p>Le destin du célèbre psychiatre et penseur anticolonialiste Frantz Fanon, de la Martinique à l’Algérie.</p>
       <div class="buttons">
-        <button>▶ Regarder</button>
+        <button class="read-review-btn">📝 Lire la critique</button>
         <button>＋ Ajouter</button>
       </div>
     </div>
@@ -36,52 +55,75 @@
 
   <section class="carousel">
     <h2>Dernières sorties</h2>
-    <div class="film-grid">
-      <div class="film-card">
-        <img src="images\Fanon\fanon.jpg" alt="Fanon">
-        <h3>Fanon <span class="badge">Film</span></h3>
+  
+    <div class="carousel-container">
+      <button class="carousel-btn left" id="prevBtn">❮</button>
+  
+      <div class="carousel-track" id="carouselTrack">
+        <div class="film-card">
+          <img src="images/Fanon/fanon.jpg" alt="Fanon">
+          <h3>Fanon <span class="badge">Film</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/Ma mère/ma_mere_dieu_sylvie_vartan.jpg" alt="Ma mère, Dieu et Sylvie Vartan">
+          <h3>Ma mère, Dieu... <span class="badge">Film</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/aimons_nous_vivons/aimons_nous_vivants.jpg" alt="Aimons-nous vivants">
+          <h3>Aimons-nous vivants <span class="badge">Film</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/ozi_voix/ozi_voix_forets.jpg" alt="Ozi, la voix de la forêt">
+          <h3>Ozi, la voix... <span class="badge">Film</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/le_routard/le_routard.jpg" alt="Le Routard">
+          <h3>Le Routard <span class="badge">Film</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/Ne_zha_2/Ne_Zha_2_poster.jpg" alt="Ne Zha 2">
+          <h3>Ne Zha 2 <span class="badge">Film</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/minecraft/minecraft_affiche.jpg" alt="Minecraft">
+          <h3>Minecraft <span class="badge">Film</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/les tuches/les_tuches_affiches.jpg" alt="God Save the Tuche">
+          <h3>God Save the Tuche <span class="badge">Film</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/the gentlemen/the_gentlemen.jpg" alt="The Gentlemen">
+          <h3>The Gentlemen <span class="badge">Série</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/les_gouttes de Dieu/les_gouttes_de_Dieu.jpg" alt="Les Gouttes de Dieu">
+          <h3>Les Gouttes de Dieu <span class="badge">Série</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/le problème à 3 corps/Problème_3_corps.jpg" alt="Le Problème à 3 Corps">
+          <h3>Le Problème à 3 Corps <span class="badge">Série</span></h3>
+        </div>
       </div>
-      <div class="film-card">
-        <img src="images\Ma mère\ma_mere_dieu_sylvie_vartan.jpg" alt="Ma mère, Dieu et Sylvie Vartan">
-        <h3>Ma mère, Dieu... <span class="badge">Film</span></h3>
-      </div>
-      <div class="film-card">
-        <img src="images\aimons_nous_vivons\aimons_nous_vivants.jpg" alt="Aimons-nous vivants">
-        <h3>Aimons-nous vivants <span class="badge">Film</span></h3>
-      </div>
-      <div class="film-card">
-        <img src="images\ozi_voix\ozi_voix_forets.jpg" alt="Ozi, la voix de la forêt">
-        <h3>Ozi, la voix... <span class="badge">Film</span></h3>
-      </div>
-      <div class="film-card">
-        <img src="images\le_routard\le_routard.jpg" alt="Le Routard">
-        <h3>Le Routard <span class="badge">Film</span></h3>
-      </div>
-      <div class="film-card">
-        <img src="assets/images/ne_zha_2.jpg" alt="Ne Zha 2">
-        <h3>Ne Zha 2 <span class="badge">Film</span></h3>
-      </div>
-      <div class="film-card">
-        <img src="assets/images/minecraft_film.jpg" alt="Minecraft, le film">
-        <h3>Minecraft <span class="badge">Film</span></h3>
-      </div>
-      <div class="film-card">
-        <img src="assets/images/god_save_tuche.jpg" alt="God Save the Tuche">
-        <h3>God Save the Tuche <span class="badge">Film</span></h3>
-      </div>
-      <div class="film-card">
-        <img src="assets/images/the_gentlemen.jpg" alt="The Gentlemen">
-        <h3>The Gentlemen <span class="badge">Série</span></h3>
-      </div>
-      <div class="film-card">
-        <img src="assets/images/les_gouttes_de_dieu.jpg" alt="Les Gouttes de Dieu">
-        <h3>Les Gouttes de Dieu <span class="badge">Série</span></h3>
-      </div>
-      <div class="film-card">
-        <img src="assets/images/probleme_3_corps.jpg" alt="Le Problème à 3 Corps">
-        <h3>Le Problème à 3 Corps <span class="badge">Série</span></h3>
-      </div>
+  
+      <button class="carousel-btn right" id="nextBtn">❯</button>
     </div>
   </section>
+  
+  <footer>
+  <div class="footer-links">
+    <ul>
+      <li><a href="principale.html">Accueil</a></li>
+      <li><a href="films.html">Films</a></li>
+      <li><a href="series.html">Séries</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <p>&copy; 2025 T'as vu ou pas — Tous droits réservés</p>
+</footer>
+
+<script src="main.js"></script>
+
 </body>
 </html>
