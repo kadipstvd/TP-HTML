@@ -4,20 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>T'as vu ou pas - Films</title>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Harmonisation de la police avec Montserrat comme sur la home -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-  <header>
-    <h1>T'as vu ou pas</h1>
-    <nav>
-      <a href="principale.html">Accueil</a>
-      <a href="films.html" class="active">Films</a>
-      <a href="series.html">Séries</a>
-      <a href="about.html">À propos</a>
-    </nav>
+  <!-- HEADER MODERNE -->
+  <header class="navbar modern">
+    <div class="navbar-container">
+      <div class="logo">T'as vu ou pas</div>
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="principale.html">Accueil</a></li>
+          <li><a href="films.html" class="active">Films</a></li>
+          <li><a href="/Users/khadidiatoufofana/Downloads/TP-HTML-main/Séries.html">Séries</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="profil.html">Profil</a></li>
+        </ul>
+      </nav>
+      <div class="navbar-actions">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Rechercher...">
+        </div>        
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
   </header>
 
+  <!-- SECTION FILMS -->
   <section class="carousel">
     <h2>Films disponibles</h2>
 
@@ -28,34 +50,32 @@
       <button class="filter-btn">Comédie</button>
     </div>
 
-    <div class="film-grid">
-      <a href="article1.html" class="film-card">
-        <img src="images\Fanon\fanon.jpg" alt="Fanon">
-        <h3>Fanon <span class="badge">Film</span></h3>
-      </a>
-      <a href="article2.html" class="film-card">
-        <img src="images\Ma mère\ma_mere_dieu_sylvie_vartan.jpg" alt="Ma mère, Dieu et Sylvie Vartan">
-        <h3>Ma mère, Dieu... <span class="badge">Film</span></h3>
-      </a>
-      <div class="film-card">
-        <img src="images/ozi_voix/ozi_voix_forets.jpg" alt="Ozi, la voix de la forêt">
-        <h3>Ozi, la voix... <span class="badge">Film</span></h3>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <a href="article1.html" class="film-card">
+          <img src="images/Fanon/fanon.jpg" alt="Fanon">
+          <h3>Fanon <span class="badge">Film</span></h3>
+        </a>
+        <a href="article2.html" class="film-card">
+          <img src="images/Ma mère/ma_mere_dieu_sylvie_vartan.jpg" alt="Ma mère, Dieu et Sylvie Vartan">
+          <h3>Ma mère, Dieu... <span class="badge">Film</span></h3>
+        </a>
+        <div class="film-card">
+          <img src="images/ozi_voix/ozi_voix_forets.jpg" alt="Ozi, la voix de la forêt">
+          <h3>Ozi, la voix... <span class="badge">Film</span></h3>
+        </div>
+        <div class="film-card">
+          <img src="images/le_routard/le_routard.jpg" alt="Le Routard">
+          <h3>Le Routard <span class="badge">Film</span></h3>
+        </div>
       </div>
-      <div class="film-card">
-        <img src="images/le_routard/le_routard.jpg" alt="Le Routard">
-        <h3>Le Routard <span class="badge">Film</span></h3>
     </div>
   </section>
 
+  <!-- FOOTER COHÉRENT -->
   <footer>
-    <nav>
+    <div class="footer-links">
       <ul>
         <li><a href="principale.html">Accueil</a></li>
-        <li><a href="about.html">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <p>&copy; 2025 T'as vu ou pas - Tous droits réservés</p>
-  </footer>
-</body>
-</html>
+        <li><a href="films.html">Films</a></li>
+        <li><a href="series.html">Séries</a></
